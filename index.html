@@ -16,29 +16,39 @@
     <body>
        <p id="demo"></p>
        <script>
-           let d = new Date().getDay();
+     
+           let d = new Date().getDay(); 
+          
            if (d == 0) {
                d = "it is Sunday";
+               document.body.style.backgroundColor = "#f9caa7";
            }
            if (d == 6) {
                d = "it is Saturday";
+               document.body.style.backgroundColor = "#4b86b4";
            }
            if (d == 5) {
                d = "it is Friday";
+               document.body.style.backgroundColor = "#dec3c3";
            }
            if (d == 4) {
                d = "it is Thursday";
+               document.body.style.backgroundColor = "#fed766";
            }
            if (d == 3) {
                d = "it is Wednesday";
+               document.body.style.backgroundColor = "lavender";
            }
            if (d == 2) {
                d = "it is Tuesday";
+               document.body.style.backgroundColor = "lightblue";
            }
            if (d == 1) {
                d = "it is Monday";
+               document.body.style.backgroundColor = "pink";
            }
            document.getElementById("demo").innerHTML = d;
+           
            </script>
     </body>
     </html>
