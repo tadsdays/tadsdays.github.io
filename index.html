@@ -19,79 +19,101 @@
        <p id="demo2"></p>
        <p id="demo3"></p>
        <script>
-     
-           let d = new Date().getDay(); 
+        let day;
+        let month;
+        let year;
+         switch (new Date().getDay()) {
+             
+            case 1:
+            day = "Monday";
+            document.body.style.backgroundColor = "pink";
+            
+            case 2:
+            day = "Tuesday";
+            document.body.style.backgroundColor = "lightblue";
+            break;
+
+            case 3:
+            day = "Wednesday";
+            document.body.style.backgroundColor = "lavender";
+            break;
+            
+            case 4:
+            day = "Thursday";
+            document.body.style.backgroundColor = "#fed766";
+            break;
+
+            case 5:
+            day = "Friday";
+            document.body.style.backgroundColor = "dec3c3";
+            break;
+
+            case 6:
+            day = "Saturday";
+            document.body.style.backgroundColor = "#4b86b4";
+            break;
+
+            case 0:
+            day = "Sunday";
+            document.body.style.backgroundColor = "#f9caa7";
+            break;
+         }
+
+         document.getElementById("demo").innerHTML = "It is " + day;
           
-           if (d == 0) {
-               d = "It is Sunday";
-               document.body.style.backgroundColor = "#f9caa7";
-           }
-           if (d == 6) {
-               d = "It is Saturday";
-               document.body.style.backgroundColor = "#4b86b4";
-           }
-           if (d == 5) {
-               d = "It is Friday";
-               document.body.style.backgroundColor = "#dec3c3";
-           }
-           if (d == 4) {
-               d = "It is Thursday";
-               document.body.style.backgroundColor = "#fed766";
-           }
-           if (d == 3) {
-               d = "It is Wednesday";
-               document.body.style.backgroundColor = "lavender";
-           }
-           if (d == 2) {
-               d = "It is Tuesday";
-               document.body.style.backgroundColor = "lightblue";
-           }
-           if (d == 1) {
-               d = "t is Monday";
-               document.body.style.backgroundColor = "pink";
-           }
-           document.getElementById("demo").innerHTML = d;
+           year = new Date().getFullYear();
+           document.getElementById("demo2").innerHTML = "It is also " + year;
            
-           let d2 = new Date().getFullYear();
-           document.getElementById("demo2").innerHTML = "It is also " + d2;
-           
-           let d3 = new Date().getMonth();
-           if (d3 == 11) {
-           document.getElementById("demo3").innerHTML = "It is also also December";
+           switch (new Date().getMonth()) {
+            case 0:
+            month = "January";
+            break;
+
+            case 1:
+            month = "February";
+            break;
+
+            case 2:
+            month = "March";
+            break;
+
+            case 3:
+            month = "April";
+            break;
+
+            case 4:
+            month = "May";
+            break;
+
+            case 5:
+            month = "June";
+            break;
+
+            case 6:
+            month = "July";
+            break;
+            
+            case 7:
+            month = "August";
+            break;
+
+            case 8: 
+            month = "September";
+            break;
+
+            case 9:
+            month = "October";
+            break;
+
+            case 10:
+            month = "November";
+            break;
+
+            case 11: 
+            month = "December";
+            break;
            }
-           if (d3 == 10) {
-           document.getElementById("demo3").innerHTML = "It is also also November";
-           }
-           if (d3 == 9) {
-           document.getElementById("demo3").innerHTML = "It is also also October";
-           }
-           if (d3 == 8) {
-           document.getElementById("demo3").innerHTML = "It is also also September";
-           }
-           if (d3 == 7) {
-           document.getElementById("demo3").innerHTML = "It is also also August";
-           }
-           if (d3 == 6) {
-           document.getElementById("demo3").innerHTML = "It is also also July";
-           }
-           if (d3 == 5) {
-           document.getElementById("demo3").innerHTML = "It is also also June";
-           }
-           if (d3 == 4) {
-           document.getElementById("demo3").innerHTML = "It is also also May";
-           }
-           if (d3 == 3) {
-           document.getElementById("demo3").innerHTML = "It is also also April";
-           }
-           if (d3 == 2) {
-           document.getElementById("demo3").innerHTML = "It is also also March";
-           }
-           if (d3 == 1) {
-           document.getElementById("demo3").innerHTML = "It is also also February";
-           }
-           if (d3 == 0) {
-           document.getElementById("demo3").innerHTML = "It is also also January";
-           }
+           document.getElementById("demo3").innerHTML = "It is also also " + month;
            </script>
     </body>
     </html>
